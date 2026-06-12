@@ -1,0 +1,22 @@
+# main.yaml
+server:
+  port: 8080
+  host: "127.0.0.1"
+  timeout: 30s
+
+database:
+  driver: "postgres"
+  host: "localhost"
+  port: 5432
+  name: "production_db"
+  username: "admin"
+  ssl_mode: true
+
+features:
+  enable_beta_ui: false
+  max_upload_size_mb: 50
+
+logging:
+  level: "info"
+  format: "json"
+  destination: "stdout"
